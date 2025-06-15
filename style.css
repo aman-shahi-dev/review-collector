@@ -1,0 +1,174 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+
+.container{
+    /* width: calc(100% - 1rem);    */
+    /* height: calc(100% - 1rem); */
+    width: 100%;
+    height: 100%;
+    /* margin: 0.5rem; */
+    border: none;
+    border-radius: 8px;
+    background-color: lightblue; 
+    display: flex;
+    gap: 1rem;
+}
+
+.reviewInput{
+    width: 40%;
+    height: 100%;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#inputName{
+    width: 95%;
+    height: 6%;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+#inputName:focus{
+    border: none;
+    outline: none;
+}
+
+#inputText{
+    width: 95%;
+    height: 40%;
+    font-size: 1.2rem;
+    resize: none;
+    border: none;
+    padding: 1rem;
+}
+
+#inputText:focus{
+    border: none;
+    outline: none;
+}
+
+#submitBtn{
+    width: 60%;
+    height: 5%;
+}
+
+/* Base style (already defined) */
+#submitBtn {
+    width: 20%;
+    height: 5%;
+}
+
+@media (max-width: 1440px) {
+    #submitBtn {
+        width: 30%;
+        height: 4%;
+    }
+}
+
+@media (max-width: 667px){
+    #submitBtn{
+        width: 60%;
+        height: 6%;
+    }
+}
+
+
+.reviewsList{
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-y: scroll;
+    scrollbar-width:auto;
+    
+}
+
+.reviewBox {
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    background-color: cadetblue;
+    border-radius: 8px;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.reviewName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.reviewText {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem
+}
+
+.deleteBtn {
+  align-self: flex-end;
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #e60000;
+}
