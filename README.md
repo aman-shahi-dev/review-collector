@@ -2,7 +2,7 @@
 
 A clean and responsive web app to collect, display, and manage user reviews. Built with **HTML, CSS, and JavaScript**.
 
-*[Check it out]()
+[Check it out](https://aman-shahi-dev.github.io/review-collector/)
 
 ---
 
